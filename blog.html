@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link type="text/css" rel="stylesheet" href="css/desktop.css"></link>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/query.js"></script>
+  <title>CHS Robotics</title>
+</head>
+<body>
+  <p class="quicksand" style="margin-top: 25%; margin-left: 5%; font-size: 2.5em; color: #6C7A89;">blogs</p>
+  <div id="team_img" style="position: absolute; top: 0; left: 0; background-size: cover; background-image: url('http://tinorobotics.org/wp-content/uploads/TinoRoboticsBanner6038.png');"></div>
+  <div id="top_bar" class="team_bar quicksand" style="background: rgba(105,0,0,0.35); color: white;">
+    <img id="logo" src="img/RoboLogo.png"></img>
+    <p id="header_text" style="color: white;">Cupertino High School Robotics</p>
+    <p id="team_title" style="color: white; text-align: center; font-family: Avenir; font-size: 2.5em;">####: Team Name</p>
+    <style>
+      #menu_items {
+        text-align: right;
+      }
+      #menu_items li:hover {
+        border-top: 1px solid white;
+      }
+      #headline_main {
+        top: 40%;
+        height: 40%;
+      }
+      #event_upcoming {
+        position: absolute;
+        color: white;
+        font-size: 2em;
+        text-align: center;
+        padding: 15px;
+        top: 42.5%;
+        right: 15%;
+        background: #EF4836;
+      }
+      #event_description {
+        position: absolute;
+        color: grey;
+        background: lightgrey;
+        width: 90%;
+        left: 5%;
+        top: 100%;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        font-size: 0.45em;
+      }
+      #title {
+        font-size: 2.75em;
+      }
+      #date {
+        font-size: 2.25em;
+      }
+      #see {
+        color: #3498db;
+        font-size: 0.2em;
+        padding-bottom: 3px;
+        border-bottom: 2px solid grey;
+      }
+      .team_options {
+        font-size: 1.85em;
+        transition: all 0.15s;
+        -moz-transition: all 0.15s;
+        -webkit-transition: all 0.15s;
+        text-align: center;
+      }
+      #media_icon {
+        color: lightgrey;
+      }
+      #media_icon:hover {
+        color: #e74c3c;
+      }
+      #contact_icon {
+        color: lightgrey;
+      }
+      #contact_icon:hover {
+        color: #3498db;
+      }
+      #blog_icon {
+        color: lightgrey;
+      }
+      #blog_icon:hover {
+        color: #2ecc71;
+      }
+      #icons_team {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        font-size: 2em;
+        cursor: pointer;
+      }
+    </style>
+    <ul id="menu_items" style="color: white;">
+      <li>Members</li>
+      <li>Blogs</li>
+      <li>Videos</li>
+      <li>Photos</li>
+    </ul>
+  </div>
+  <style>
+    .post_minified {
+      width: 80%;
+      margin-left: 10%;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border-top: 1px solid #bdc3c7;
+      color: #6C7A89;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    .post_minified:hover {
+      background: rgba(0, 0, 0, 0.005);
+    }
+    .row_1 {
+      display: inline-block;
+    }
+    .post_title {
+      font-size: 2em;
+    }
+    .post_preview {
+      margin-top: 0;
+    }
+    .post_text_full {
+      display: none;
+    }
+    .img_preview {
+      height: 30%;
+      width: 30%;
+    }
+    .img_not {
+      display: none;
+    }
+    #blog_expand {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      display: none;
+    }
+    #content_blog {
+      display: none;
+      overflow: scroll;
+      background: white;
+      position: fixed;
+      width: 90%;
+      height: 90%;
+      top: 5%;
+      left: 5%;
+      -webkit-box-shadow: 0px 1px 5px 0px #6C7A89;
+      -moz-box-shadow: 0px 1px 5px 0px #6C7A89;
+      box-shadow: 0px 1px 35px 0px #6C7A89;
+    }
+    .poster {
+      position: absolute;
+      height: 100px;
+      width: 100px;
+      border-radius: 100%;
+      top: 20px;
+      left: 20px;
+    }
+    .date {
+      display: none;
+    }
+    .blog_title {
+      text-align: center;
+      color: #6C7A89;
+      font-size: 3.5em;
+    }
+    .preview_expand {
+      margin-right: 0;
+      margin-left: 0;
+      max-height: 500px;
+    }
+    .post_full {
+      font-family: Avenir;
+      width: 60%;
+      bottom: 5%;
+      margin-left: 20%;
+      line-height: 35px;
+      word-wrap: break-word;
+    }
+    .blog_date {
+      font-family: Avenir;
+      margin-bottom: 20px;
+      text-align: center;
+      margin-top: -10px;
+      color: #bdc3c7;
+    }
+  </style>
+  <div class="post_minified">
+    <img class="row_1" src="https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/13775385_1668897130098480_4269818672842016901_n.jpg?oh=7631dbbac4a69a348c79bd5008a753d3&oe=583BFFB2" style="height: 50px; width: 50px; border-radius: 100%;"></img>
+    &nbsp;&nbsp;&nbsp;&nbsp;<p class="post_title row_1 quicksand">this is the post title</p>
+    <p class="post_preview quicksand_lower">this is the text preview of the post not exceeding one a length of one line this is the text preview of the post not exceeding one a length of one line...</p>
+    <p class="post_text_full">efewfewfweiohfweefewfewfweiohfweefewfewfweiohfweefewfewfweiohfweefewfewfweiohfweefewfewfweiohfweefewfewfweiohfweefewfewfweiohfweefewfewfweiohfweefewfewfweiohfweefewfewfweiohfweefewfewfweiohfweefewfewfweiohfweefewfewfweiohfweefewfewfweiohfweefewfewfweiohfweefewfewfweiohfweefewfewfweiohfweefewfewfweiohfweefewfewfweiohfweefewfewfweiohfweefewfewfweiohfweefewfewfweiohfweefewfewfweiohfweefewfewfweiohfweefewfewfweiohfweefewfewfweiohfweefewfewfweiohfweefewfewfweiohfweefewfewfweiohfweefewfewfweiohfweefewfewfweiohfweefewfewfweiohfweefewfewfweiohfweefewfewfweiohfweefewfewfweiohfweefewfewfweiohfweefewfewfweiohfwe</p>
+    <img class="img_preview" src="http://tinorobotics.org/wp-content/uploads/0002-42.png"/>
+    <p class="date">October 10, 2016</p>
+  </div>
+  <div class="post_minified">
+    <img class="row_1" src="https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/13775385_1668897130098480_4269818672842016901_n.jpg?oh=7631dbbac4a69a348c79bd5008a753d3&oe=583BFFB2" style="height: 50px; width: 50px; border-radius: 100%;"></img>
+    &nbsp;&nbsp;&nbsp;&nbsp;<p class="post_title row_1 quicksand">this is the post title</p>
+    <p class="post_preview quicksand_lower">this is the text preview of the post not exceeding one a length of one line this is the text preview of the post not exceeding one a length of one line...</p>
+    <p class="post_text_full"></p>
+    <img class="img_preview" src="http://tinorobotics.org/wp-content/uploads/0002-42.png"/>
+  </div>
+  <div class="post_minified">
+    <img class="row_1" src="https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/13775385_1668897130098480_4269818672842016901_n.jpg?oh=7631dbbac4a69a348c79bd5008a753d3&oe=583BFFB2" style="height: 50px; width: 50px; border-radius: 100%;"></img>
+    &nbsp;&nbsp;&nbsp;&nbsp;<p class="post_title row_1 quicksand">this is the post title</p>
+    <p class="post_preview quicksand_lower">this is the text preview of the post not exceeding one a length of one line this is the text preview of the post not exceeding one a length of one line...</p>
+    <p class="post_text_full"></p>
+    <img class="img_preview" src="http://tinorobotics.org/wp-content/uploads/0002-42.png"/>
+  </div>
+  <div class="post_minified">
+    <img class="row_1" src="https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/13775385_1668897130098480_4269818672842016901_n.jpg?oh=7631dbbac4a69a348c79bd5008a753d3&oe=583BFFB2" style="height: 50px; width: 50px; border-radius: 100%;"></img>
+    &nbsp;&nbsp;&nbsp;&nbsp;<p class="post_title row_1 quicksand">this is the post title</p>
+    <p class="post_preview quicksand_lower">this is the text preview of the post not exceeding one a length of one line this is the text preview of the post not exceeding one a length of one line...</p>
+    <p class="post_text_full"></p>
+    <img class="img_preview blog_img" src="http://tinorobotics.org/wp-content/uploads/0002-42.png"/>
+    <img class="img_not blog_img" src="http://tinorobotics.org/wp-content/uploads/0002-42.png"/>
+    <img class="img_not blog_img" src="http://tinorobotics.org/wp-content/uploads/0002-42.png"/>
+  </div>
+  <div class="cl" id="blog_expand"></div>
+  <div class="cl" id="content_blog">
+    <img class="poster" src=""></img>
+    <p class="blog_title quicksand"></p>
+    <p class="blog_date"></p>
+    <img class="preview_expand"></img>
+    <p class="post_full"></p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,192 @@
+@font-face {
+  font-family: icon;
+  src: url('../font-awesome-4.6.3/fonts/fontawesome-webfont.ttf');
+}
+.icon {
+  font-family: icon;
+}
+body {
+  padding-bottom: 100px;
+}
+.quicksand {
+  font-family: Avenir;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+.quicksand_lower {
+  font-family: Avenir;
+  font-weight: 100;
+}
+#logo {
+  height: 90px;
+  width: 90px;
+  position: absolute;
+  margin-top: 25px;
+  margin-left: 15px;
+}
+#top_bar {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding-bottom: 10px;
+  background: #F2F1EF;
+  -webkit-box-shadow: 0px 1px 5px 0px #6C7A89;
+  -moz-box-shadow: 0px 1px 5px 0px #6C7A89;
+  box-shadow: 0px 1px 5px 0px #6C7A89;
+}
+#header_text {
+  color: #EF4836;
+  margin-top: 52.5px;
+  margin-left: 120px;
+  font-size: 1.75em;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+#motto {
+  color: #EF4836;
+  text-decoration-style: wavy;
+  font-size: 0.65em;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+#menu_items {
+  text-align: center;
+  color: #EF4836;
+  list-style: none;
+}
+#menu_items li {
+  display: inline-block;
+  margin-right: 25px;
+  margin-left: 25px;
+  margin-top: 15px;
+  font-size: 1.15em;
+  transition: all 0.15s;
+  padding-right: 2.5px;
+  padding-left: 2.5px;
+  padding-top: 5px;
+  cursor: pointer;
+}
+#menu_items li:hover {
+  border-top: 1px solid #EF4836;
+  margin-top: 10px;
+}
+.headlines {
+  position: absolute;
+}
+#headline_main {
+  cursor: pointer;
+  background-image: url('http://tinorobotics.org/wp-content/uploads/0002-42.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 5px solid #F2F1EF;
+  height: 62.5%;
+  left: 10%;
+  width: 50%;
+  top: 25%;
+}
+#sublines {
+  width: 27.5%;
+  right: 10%;
+  border: none;
+  top: 25%;
+  position: absolute;
+  height: 62.5%;
+  overflow: scroll;
+}
+.title {
+  margin: 0;
+  margin-bottom: 5px;
+  background: #EF4836;
+  color: white;
+  text-align: center;
+  font-size: 1.65em;
+  border-bottom: 1px solid #EF4836;
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+.headline_text {
+  position: absolute;
+  bottom: 0;
+  background: #F2F1EF;
+  width: 90%;
+  color: transparent;
+  left: 0;
+  font-size: 1.05em;
+  padding-left: 5%;
+  padding-right: 5%;
+  transition: all 0.15s;
+  -webkit-transition: all 0.15s;
+  -moz-transition: all 0.15s;
+}
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: black;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  transition: all 0.15s;
+  -webkit-transition: all 0.15s;
+  -moz-transition: all 0.15s;
+}
+#headline_main:hover .overlay {
+  opacity: 0.15;
+}
+#headline_main:hover .headline_text {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background: #F2F1EF;
+  color: #EF4836;
+}
+.subline {
+  text-align: center;
+  padding: 15px;
+  margin: 0;
+  color: #EF4836;
+  transition: all 0.15s;
+  -webkit-transition: all 0.15s;
+  -moz-transition: all 0.15s;
+}
+.subline:hover {
+  background: #F64747;
+  color: white;
+}
+#events_container {
+  position: absolute;
+  top: 32.5%;
+  width: 80%;
+  left: 10%;
+}
+.event_header {
+  width: 100%;
+  padding: 8.5px;
+  padding-left: 20px;
+  font-size: 1.5em;
+  color: white;
+  background: #EF4836;
+  -webkit-box-shadow: 0px 1px 5px 0px #6C7A89;
+  -moz-box-shadow: 0px 1px 5px 0px #6C7A89;
+  box-shadow: 0px 1px 5px 0px #6C7A89;
+  transition: all 0.15s;
+  -webkit-transition: all 0.15s;
+  -moz-transition: all 0.15s;
+  margin-top: 60px;
+}
+.event {
+  display: none;
+  background: white;
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.35);;
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.35);;
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.35);;
+  margin: 0;
+  width: 100%;
+  margin-left: 4.25px;
+  margin-bottom: 10px;
+  padding: 8.5px;
+  color: #6C7A89;
+}
