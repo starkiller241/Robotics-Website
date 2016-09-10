@@ -1,4 +1,8 @@
 $(document).ready(function() {
+  $('.link').click(function() {
+    var link = $(this).attr("name");
+    window.location = link;
+  });
   $('.event_header').click(function() {
     var id = "#event"+$(this).attr("id");
     $(id).slideToggle(120);
