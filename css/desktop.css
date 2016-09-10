@@ -237,3 +237,36 @@ body {
 }
 
 /* END WINDOWS COMPATIBILITY */
+#content_right {
+  position: absolute;
+  height: 62.5%;
+  width: 30%;
+  right: 5%;
+  top: 30%;
+  overflow: scroll;
+}
+.club_notifs {
+  padding: 10%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-right: 10%;
+  background: #EF4836;
+  color: white;
+}
+.club_notifs:hover {
+  background: #C0392B;
+}
+#outreach {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.notif_header {
+  font-size: 15px;
+}
+.notif_content {
+  font-size: 30px;
+}
+.event_photos {
+  color: #4183D7;
+  cursor: pointer;
+}

@@ -41,6 +41,15 @@ $(document).ready(function() {
     $('#blog_expand').hide();
     $('#content_blog').slideToggle(120);
   });
+
+  $('.event_photos').each(function() {
+    if($(this).text().length != "") {
+      $(this).text("Photos: " + $(this).text());
+    } else {
+      $(this).remove();
+    }
+  });
+
   $(document).keyup(function(event) {
     if(event.which == 27) {
       if($('#blog_expand').css('display') == 'block') {
