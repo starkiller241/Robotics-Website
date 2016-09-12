@@ -32,7 +32,7 @@ $(document).ready(function() {
     $('.preview_expand').css({
       'margin-left': dim
     });
-    $('.post_full').text($('.post_text_full').text());
+    $('.post_full').html($('.post_text_full').html());
     $('.blog_date').text(post.find('.date').text());
   });
 
@@ -50,6 +50,11 @@ $(document).ready(function() {
     }
   });
 
+  $('.post_preview').each(function() {
+    if($(this).text().length >= 135) {
+      $(this).text($(this).text().substring(0,135) + "...");
+    }
+  });
   $(document).keyup(function(event) {
     if(event.which == 27) {
       if($('#blog_expand').css('display') == 'block') {

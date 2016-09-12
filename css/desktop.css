@@ -270,3 +270,18 @@ body {
   color: #4183D7;
   cursor: pointer;
 }
+img.row_1 {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+img.poster {
+  object-fit: cover;
+}
+.content_pics {
+  max-width: 35%;
+  max-height: 250px;
+  margin: auto;
+  object-fit: cover;
+}
