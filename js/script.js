@@ -32,7 +32,7 @@ $(document).ready(function() {
     $('.preview_expand').css({
       'margin-left': dim
     });
-    $('.post_full').html($('.post_text_full').html());
+    $('.post_full').html(post.find('.post_text_full').html());
     $('.blog_date').text(post.find('.date').text());
   });
 
