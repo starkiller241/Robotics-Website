@@ -44,7 +44,7 @@ $(document).ready(function() {
 
   $('.event_photos').each(function() {
     if($(this).text().length != "") {
-      $(this).text("Photos: " + $(this).text());
+      $(this).text("Media: " + $(this).text());
     } else {
       $(this).remove();
     }
